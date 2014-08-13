@@ -1,0 +1,203 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#ececec" >
+
+    <RelativeLayout
+        android:id="@+id/titleBar"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="#353535"
+        android:padding="0px" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:drawablePadding="5dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:paddingLeft="96dp"
+            android:paddingRight="96dp"
+            android:singleLine="true"
+            android:text="middle"
+            android:textSize="21sp" />
+
+        <Button
+            android:id="@+id/left"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:maxWidth="96dp"
+            android:singleLine="true"
+            android:text="" />
+
+        <Button
+            android:id="@+id/right"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:maxWidth="96dp"
+            android:singleLine="true"
+            android:text=""
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleBar"
+        android:background="@drawable/main_bg" />
+
+    <RelativeLayout
+        android:id="@+id/air_company"
+        android:layout_width="fill_parent"
+        android:layout_height="282dp"
+        android:layout_alignParentBottom="true" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="42dp" >
+
+            <Button
+                android:id="@+id/search_btn"
+                android:layout_width="90dp"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:background="#009bde"
+                android:text="@string/search"
+                android:textColor="@color/text_white"
+                android:textSize="16dp" />
+
+            <EditText
+                android:id="@+id/cargo_id"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_toLeftOf="@id/search_btn"
+                android:background="#dddddd"
+                android:hint="@string/cargo_id"
+                android:inputType="number"
+                android:maxLength="11"
+                android:paddingLeft="15dp"
+                android:textColorHint="@color/text_hint" />
+        </RelativeLayout>
+        
+        <GridView
+            android:id="@+id/logos"
+            android:layout_width="fill_parent"
+            android:layout_height="240dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="42dp"
+            android:background="#f0f0f0"
+            android:horizontalSpacing="0dp"
+            android:numColumns="3"
+            android:padding="0dp"
+            android:scrollbars="none"
+            android:stretchMode="columnWidth"
+            android:listSelector="#00000000"
+            android:verticalSpacing="0dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/subscribe"
+        android:layout_width="fill_parent"
+        android:layout_height="320dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:background="#ececec" >
+
+        <LinearLayout
+            android:id="@+id/topBar"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/all"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/subscribe_title_btn_bg_selector"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="@string/subscribe_top_btn_all"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/alert"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/subscribe_title_btn_bg_selector"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="@string/subscribe_top_btn_alert"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/normal"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/subscribe_title_btn_bg_selector"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="@string/subscribe_top_btn_normal"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/history"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/subscribe_title_btn_bg_selector"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="@string/subscribe_top_btn_history"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/topBar"
+            android:layout_marginTop="10dp"
+            android:background="#dcdcdc"
+            android:divider="@null"
+            android:dividerHeight="0dp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/bottom_search_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/search_btn" />
+
+    <RelativeLayout
+        android:id="@+id/progress"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true"
+        android:visibility="gone" >
+	    <ProgressBar
+	        android:id="@+id/progress"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginTop="180dp"/>
+    </RelativeLayout>
+
+</RelativeLayout>

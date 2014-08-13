@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<declare-styleable name="yfrt">
+	    <attr name="progress_bg" format="color" />
+	    <attr name="progress_normal" format="color" />
+	    <attr name="progress_highlight" format="color" />
+	    <attr name="progress_indicator" format="reference"/>
+	    
+	</declare-styleable>
+</resources>

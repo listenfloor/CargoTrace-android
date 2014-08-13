@@ -1,0 +1,128 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/setting_bg"
+    android:orientation="vertical"
+    android:paddingRight="10dp" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="52dp"
+        android:background="#353535"
+        android:paddingLeft="10dp" >
+
+        <ImageView
+            android:id="@+id/head"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:contentDescription="null"
+            android:background="@drawable/head" />
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@id/head"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/home"
+        android:layout_width="fill_parent"
+        android:layout_height="52dp"
+        android:background="#2f2f2f" >
+
+        <ImageView
+            android:id="@+id/homeIcon"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/home_icon" />
+
+        <TextView
+            android:id="@+id/homeBtn"
+            android:layout_width="80dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="62dp"
+            android:gravity="center"
+            android:text="@string/home"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/subscribe"
+        android:layout_width="fill_parent"
+        android:layout_height="52dp"
+        android:background="#2f2f2f" >
+
+        <ImageView
+            android:id="@+id/subscribeIcon"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/start_alert_icon" />
+
+        <TextView
+            android:id="@+id/subscribeBtn"
+            android:layout_width="80dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="62dp"
+            android:gravity="center"
+            android:text="@string/start_alert"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/support"
+        android:layout_width="fill_parent"
+        android:layout_height="52dp"
+        android:background="#2f2f2f" >
+
+        <ImageView
+            android:id="@+id/supportIcon"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/support_icon" />
+
+        <TextView
+            android:id="@+id/supportBtn"
+            android:layout_width="80dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="62dp"
+            android:gravity="center"
+            android:text="@string/support"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/login"
+        android:layout_width="fill_parent"
+        android:layout_height="52dp"
+        android:background="#2f2f2f" >
+
+        <ImageView
+            android:id="@+id/loginIcon"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/login_icon" />
+
+        <TextView
+            android:id="@+id/loginBtn"
+            android:layout_width="80dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="62dp"
+            android:gravity="center"
+            android:text="@string/login"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+</LinearLayout>

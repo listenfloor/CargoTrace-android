@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">指尖货运</string>
+	<string name="query_air_company_err">查询航空公司列表失败</string>
+	<string name="search">搜  索</string>
+	<string name="cargo_id">搜索运单号</string>
+	<string name="order_id_text">运单号</string>
+	<string name="query_order_text">运单号</string>
+	<string name="order_id_error">运单号不正确</string>
+	<string name="query_order_error">查询失败</string>
+	<string name="query_company_list_error">查询航空公司列表失败</string>
+	<string name="search_title">查询运单</string>
+	<string name="subscribe_title">已订阅运单</string>
+	<string name="support_title">支　持</string>
+	<string name="order_detail_title">运单详情</string>
+	<string name="refresh_failed">刷新失败</string>
+	<string name="refresh_success">刷新成功</string>
+	<string name="subscribe_failed">订阅失败</string>
+	<string name="subscribe_success">订阅成功</string>
+	<string name="unsubscribe_failed">取消订阅失败</string>
+	<string name="unsubscribe_success">取消订阅成功</string>
+		<string name="user_id">账　号</string>
+	<string name="password">密　码</string>
+	<string name="login_title">用户登录</string>
+	<string name="register_title">用户注册</string>
+	<string name="login">登　录</string>
+	<string name="logout">注　销</string>
+	<string name="home">主　页</string>
+	<string name="support">支　持</string>
+	<string name="start_alert">开启预警</string>
+	<string name="close_alert">关闭预警</string>
+	<string name="register">注　册</string>
+	<string name="verify">验证</string>
+	<string name="email">邮　　箱</string>
+	<string name="verify_key">验证码</string>
+	<string name="input_password">输入密码</string>
+	<string name="confirm_password">确认密码</string>
+	<string name="login_success">登录成功</string>
+	<string name="login_failed">登录失败</string>
+	<string name="register_success">注册成功</string>
+	<string name="register_failed_already_register">该用户已经注册</string>
+	<string name="register_password_format_error">密码未达到6位，或两次不一致</string>
+	<string name="login_password_format_error">密码不正确</string>
+	<string name="register_failed">注册失败</string>
+	<string name="support_content">　　谢谢支持。谢谢支持。谢谢支持。谢谢支持。谢谢支持。谢谢支持。谢谢支持。谢谢支持。谢谢支持。谢谢支持。谢谢支持。谢谢支持。</string>
+	
+	<string name="subscribe_top_btn_all">全部</string>
+	<string name="subscribe_top_btn_alert">预警</string>
+	<string name="subscribe_top_btn_normal">正常</string>
+	<string name="subscribe_top_btn_history">历史</string>
+	
+	<string name="air_company_not_support">暂不支持该航空公司</string>
+	<string name="push_not_support">该手机不支持谷歌消息推送服务</string>
+	
+</resources>

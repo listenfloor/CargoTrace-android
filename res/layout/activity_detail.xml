@@ -1,0 +1,155 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:yfrt="http://schemas.android.com/apk/res/com.yfrt.cargotrace"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ececec" >
+
+    <LinearLayout
+        android:id="@+id/cargo_progress"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="8dp" >
+	<FrameLayout
+	    android:layout_width="0dp"
+	    android:layout_height="32dp"
+	    android:layout_weight="1.0">
+	    <TextView
+	        android:id="@+id/depart_text"
+	        android:layout_width="wrap_content"
+	        android:layout_height="24dp"
+	        android:layout_gravity="center_horizontal"
+	        android:textColor="#c8c8c8"
+	        android:textSize="16sp"
+	        android:text="离　港"/>
+	    <View
+	        android:id="@+id/depart_bar"
+	        android:layout_width="fill_parent"
+	        android:layout_height="3dp"
+	        android:layout_gravity="bottom"
+	        android:layout_marginLeft="2dp"
+	        android:layout_marginRight="2dp"
+	        android:background="#c8c8c8"/>
+	</FrameLayout>
+		<FrameLayout
+	    android:layout_width="0dp"
+	    android:layout_height="32dp"
+	    android:layout_weight="1.0">
+	    <TextView
+	        android:id="@+id/ongoing_text"
+	        android:layout_width="wrap_content"
+	        android:layout_height="24dp"
+	        android:layout_gravity="center_horizontal"
+	        android:textColor="#c8c8c8"
+	        android:textSize="16sp"
+	        android:text="在途中" />
+	    <View
+	        android:id="@+id/ongoing_bar"
+	        android:layout_width="fill_parent"
+	        android:layout_height="3dp"
+	        android:layout_gravity="bottom"
+	        android:layout_marginLeft="2dp"
+	        android:layout_marginRight="2dp"
+	        android:background="#c8c8c8"/>
+	</FrameLayout>
+		<FrameLayout
+	    android:layout_width="0dp"
+	    android:layout_height="32dp"
+	    android:layout_weight="1.0">
+	    <TextView
+	        android:id="@+id/arrive_text"
+	        android:layout_width="wrap_content"
+	        android:layout_height="24dp"
+	        android:layout_gravity="center_horizontal"
+	        android:textColor="#c8c8c8"
+	        android:textSize="16sp"
+	        android:text="到　港"/>
+	    <View
+	        android:id="@+id/arrive_bar"
+	        android:layout_width="fill_parent"
+	        android:layout_height="3dp"
+	        android:layout_gravity="bottom"
+	        android:layout_marginLeft="2dp"
+	        android:layout_marginRight="2dp"
+	        android:background="#c8c8c8"/>
+	</FrameLayout>
+    </LinearLayout>
+    
+    <!-- <com.yfrt.cargotrace.MyProgressBar
+        android:id="@+id/cargo_progress"
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="10dp"
+        yfrt:progress_bg="#c8c8c8"
+        yfrt:progress_highlight="#4daf7c"
+        yfrt:progress_indicator="@drawable/indicator" /> -->
+
+    <RelativeLayout
+        android:id="@+id/controls"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true" >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#d0d0d0" />
+
+        <ImageView
+            android:id="@+id/subscribe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="27dp"
+            android:src="@drawable/subscribe" />
+
+        <ImageView
+            android:id="@+id/reply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="27dp"
+            android:src="@drawable/reply" />
+
+        <ImageView
+            android:id="@+id/more_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="27dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/more_detail" />
+
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="4dp"
+        android:layout_below="@id/cargo_progress"
+        android:layout_above="@id/controls"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:background="#ececec" />
+    
+    <RelativeLayout
+        android:id="@+id/progress"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true"
+        android:visibility="gone" >
+	    <ProgressBar
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginTop="180dp"/>
+    </RelativeLayout>
+
+</RelativeLayout>
